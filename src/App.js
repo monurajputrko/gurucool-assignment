@@ -1,14 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
-import HomeLight from './components/HomeLight';
-import AboutLight from './components/AboutLight';
 import Navbar from './components/Navbar';
+import AllRoutes from './AllRoutes/AllRoutes';
+import { useTheme } from './Theme/ThemeContext';
 
 function App() {
+  
+  const { theme } = useTheme();
+  
   return (
-    <div className="App">
+    <div style={{backgroundColor:theme?"#000000":"#eeeeee"}} className="App">
     <Navbar />
-    <HomeLight />
+    <br />
+    <AllRoutes />
     </div>
   );
 }

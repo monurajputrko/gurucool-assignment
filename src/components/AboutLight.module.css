@@ -3,7 +3,7 @@
   position: absolute;
   height: 64.21%;
   width: 36.12%;
-  top: 6.3%;
+  top: 18.3%;
   right: 76.16%;
   bottom: 29.49%;
   left: -12.28%;
@@ -14,11 +14,11 @@
 }
 .aboutLightItem {
   height: 41.34%;
-  width: 23.9%;
-  top: 57.8%;
+  width: 15.9%;
+  top: 70.8%;
   right: 9.7%;
   bottom: 0.86%;
-  left: 66.41%;
+  left: 64.41%;
 }
 .aboutLightChild1,
 .aboutLightChild2,
@@ -246,9 +246,9 @@
 .groupInner,
 .groupItem {
   position: absolute;
-  top: 69px;
-  left: 276.2px;
-  max-height: 100%;
+  top: 25px;
+  left: 110.2px;
+  max-height: 80%;
   width: 697.6px;
 }
 .groupInner {
@@ -259,7 +259,7 @@
 .thisIsItParent {
   position: absolute;
   top: 200px;
-  left: 550px;
+  left: 500px;
   width: 1045px;
   height: 564px;
   font-size: var(--font-size-45xl);
@@ -268,8 +268,8 @@
 .rectangleIcon,
 .vectorIcon {
   position: absolute;
-  top: 100px;
-  left: -59.8px;
+  top: -40px;
+  left: -180.8px;
   width: 584.8px;
   height: 803.5px;
   object-fit: contain;
@@ -277,11 +277,11 @@
 .aboutLightChild7,
 .vectorIcon {
   height: 97.03%;
-  width: 59.53%;
-  top: -0.46%;
+  width: 50.53%;
+  top: 15.46%;
   right: -35.09%;
   bottom: 3.44%;
-  left: 75.56%;
+  left: 82.56%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -289,10 +289,10 @@
 .aboutLightChild7 {
   height: 31.31%;
   width: 17.61%;
-  top: 62.5%;
+  top: 70.5%;
   right: 66.37%;
   bottom: 6.19%;
-  left: 16.02%;
+  left: 12.02%;
 }
 .aboutLight {
   width: 1920px;

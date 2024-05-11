@@ -237,7 +237,7 @@
 .socialsLinks {
   height: 29.72%;
   width: 1.88%;
-  top: 60.09%;
+  top: 71.09%;
   right: 92.29%;
   bottom: 10.19%;
   left: 5.83%;
@@ -352,7 +352,7 @@
 }
 .heroImageIcon {
   position: absolute;
-  top: 61px;
+  top: 30px;
   left: 59px;
   border-radius: var(--br-151xl) var(--br-281xl) var(--br-281xl) var(--br-781xl);
   width: 500px;
