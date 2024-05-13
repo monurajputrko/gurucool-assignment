@@ -7,6 +7,7 @@ import './Button.css';
 import SocialMediaButtons from "./SocialMedia";
 
 const HomeLight = () => {
+  const [showItems, setShowItems] = useState(false);
   const [flag, setFlag] = useState(true);
   const { theme } = useTheme();
   const contentRef = useRef(null);
@@ -23,23 +24,15 @@ const HomeLight = () => {
     }, 500); // Reset animation after 1 second
   };
 
-  // useEffect(() => {
-  //   const body = document.querySelector("body");
-  //   if (isLargeScreen) {
-  //     contentRef.current.scrollTo(0, 0);
-  //     body.style.overflow = "hidden";
-  //   } else {
-  //     body.style.overflow = "visible";
-  //   }
+  useEffect(() => {
+    setShowItems(true);
+  }, []);
 
-  //   return () => {
-  //     body.style.overflow = "visible";
-  //   };
-  // }, [isLargeScreen]);
+    const delay = 1 * 400; // Adjust delay timing as needed
+
 
   return (
     <div ref={contentRef} className={styles.homeLight}>
-      {/* <p>Is large screen? {isLargeScreen ? 'Yes' : 'No'}</p> */}
       <div>
         <div
           style={{
@@ -50,7 +43,7 @@ const HomeLight = () => {
           className={styles.image}
         >
           <img
-            style={{ marginLeft: isSmallScreen ? "" : "25px" }}
+            style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`, marginLeft: isSmallScreen ? "" : "25px" }}
             className={styles.heroImageIcon}
             alt=""
             src="/heroimg.png"
@@ -64,7 +57,7 @@ const HomeLight = () => {
         >
           <img
             draggable="false"
-            style={{
+            style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`,
               marginTop: "188px",
               marginLeft: "265px",
               width: "120px",
@@ -76,7 +69,7 @@ const HomeLight = () => {
             src="/Hello.png"
           />
           <div
-            style={{
+            style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`,
               marginTop: isLargeScreen
                 ? "0"
                 : isSmallScreen
@@ -117,7 +110,7 @@ const HomeLight = () => {
           </div>
 
           <div
-            style={{
+            style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`,
               marginTop: isLargeScreen ? "-20px" : "325px",
               marginLeft: isLargeScreen
                 ? ""
@@ -149,7 +142,7 @@ const HomeLight = () => {
         </div>
       </div>
       <div
-        style={{ display: isSmallScreen ? "" : "none" }}
+        style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`, display: isSmallScreen ? "" : "none" }}
         className={styles.socialsLinks}
       >
         <img
@@ -208,7 +201,7 @@ const HomeLight = () => {
       </div>
 
       <div
-        style={{
+        style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`,
           marginTop: isLargeScreen ? "-70px" : "270px",
           marginLeft: isLargeScreen ? "" : isSmallScreen ? "-70px" : "-250px",
         }}

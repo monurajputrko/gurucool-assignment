@@ -3,6 +3,7 @@ import HomeLight from "../components/HomeLight";
 import AboutLight from "../components/AboutLight";
 import NotFound from "../components/NotFound";
 import Projects from "../components/Projects";
+import { Appy } from "../components/Navbar";
 
 const AllRoutes = () => {
   return (
@@ -10,7 +11,7 @@ const AllRoutes = () => {
       <Route path="/" element={<HomeLight />} />
       <Route path="/about" element={<AboutLight />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={ <Appy />} />
     </Routes>
   );
 };

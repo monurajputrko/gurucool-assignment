@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../Theme/ThemeContext";
 import styles from "./HomeLight.module.css";
@@ -8,6 +8,14 @@ export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const isLargeScreen = useMediaQuery("(min-width: 500px)");
   const { theme, toggleTheme } = useTheme();
+  const [showItems, setShowItems] = useState(false);
+
+  useEffect(() => {
+    setShowItems(true);
+  }, []);
+
+    const delay = 1 * 300; // Adjust delay timing as needed
+
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
@@ -18,7 +26,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav style={{ zIndex: "110", marginTop: "0px",backgroundColor:theme?"#000000":"#eeeeee",paddingTop:"40px" }} className="navbar">
+    <nav style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`, zIndex: "110", marginTop: "0px",backgroundColor:theme?"#000000":"#eeeeee",paddingTop:"40px" }} className="navbar">
       <div className="container">
         <div style={{marginTop:"40px" }} className="logo">
           <img

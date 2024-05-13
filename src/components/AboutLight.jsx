@@ -13,6 +13,13 @@ const AboutLight = () => {
   const issmallScreen = useMediaQuery("(min-width: 750px)");
   const [flag, setFlag] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [showItems, setShowItems] = useState(false);
+
+  useEffect(() => {
+    setShowItems(true);
+  }, []);
+
+    const delay = 1 * 300; // Adjust delay timing as needed
 
   const handleClick = () => {
     setIsAnimating(true);
@@ -21,19 +28,6 @@ const AboutLight = () => {
       setFlag(false);
     }, 500); // Reset animation after 1 second
   };
-
-  // useEffect(() => {
-  //   const body = document.querySelector("body");
-  //   if (isLargeScreen) {
-  //     body.style.overflow = "hidden";
-  //   } else {
-  //     body.style.overflow = "visible";
-  //   }
-
-  //   return () => {
-  //     body.style.overflow = "visible";
-  //   };
-  // }, [isLargeScreen]);
 
 
   return (
@@ -122,9 +116,9 @@ const AboutLight = () => {
             </span>
           </div>
           <div
-            style={{ width: "70%", height: "564px", marginTop: "-70px" }}
+            style={{animation: `${showItems ? 'slide-in 0.5s forwards' : 'none'} ${delay}ms`, width: "70%", height: "564px", marginTop: "-70px" }}
             className={styles.anishKrSinhaContainer}
-          >
+           >
             <p className={styles.anishKrSinhaIsAnIndianU}>
               <span
                 style={{ color: theme ? "#eeeeee" : "#000000" }}
