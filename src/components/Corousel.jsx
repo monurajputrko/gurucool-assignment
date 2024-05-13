@@ -50,8 +50,8 @@ export const Carousel = () => {
   };
 
   return [
-    <div className="thumbs">
-      <div style={{marginLeft:isSmallScreen ? "32%" : "",}}>
+    <div>
+      <div style={{marginLeft:isSmallScreen ? "28%" : "",width:"100%"}}>
       <AliceCarousel
         infinite
         autoPlay
