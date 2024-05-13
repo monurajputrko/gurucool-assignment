@@ -25,7 +25,7 @@ To run this application locally, follow these steps :
 2. Change to the project directory :
 
 ```bash
-cd Gurucool_assignment
+cd gurucool-assignment
 ```
 
 3. Open with code editor and run the command.
