@@ -48,6 +48,10 @@ npm start
 
 ![Social](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw3OqIyCimCjpVJgzLzkVYn5w3j_GdlQ5MZ8b2xJ_oMCnYIoXpB6GlwT6WpSS9P9cREc2T8jWSckH0MiISI3m39bZtjxAqbefSiRGFEgp7uI1r2N9-6o-4AtHuUoi6gT7CDN_lsAnNQgGWMNBKwSC8Wr7A2QOyGGroh7a5I7k92eH4RUMzR210GalYWQ-f/s320/social.gif)
 
+### Sliding Animation
+
+![Social](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMQ04PmCKtrC65IDhosV1n8gq6ZDRDRi6XxqBIqn2u-ic81olSBxrzM9KqkjqIR5D-0YfpL5voJKElR2XqLi_rjVftXAgQmW8h47t0mh9dPQGC4Bu0Sz1lrRexL_lFEBqBpLFQacziS_ZU95yeTxJt-k6GeX0S_D8iojyRf6hBi3B673wiNTsiSay1AuxJ/s320/ani2.gif)
+
 ### Projects Slider Animations
 
 ![Slider](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Pw9c2mAu1vRFaI4WKu2JDu1AWEawVvkhne1Kc4g2EeZ5qVMCtSOtmcwgk0gMwE9peIDDlFC3UqnSVG4uqbrSHBTFQZWyZOrcdyhhTUs0H8geeR2nam4cRbjZiPVAto1C4WbsdjZPqX9nuvPW3sgWuN5ir4QyoiKtPMM9zhUxDrAQi67nX9fdZ0BYh5VK/s320/slider.gif)
