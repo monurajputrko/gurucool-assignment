@@ -1,0 +1,138 @@
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-external-link-square-alt:before {
+  content: "\f360";
+}
+.fa-github-square:before {
+  content: "\f092";
+}
+.icon {
+  margin-right: 0.5rem;
+}
+.column {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  align-items: flex-end;
+  align-self: normal !important;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, 0.2);
+  color: #fff;
+  flex: 25% 1;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  max-width: 25%;
+  position: relative;
+  transition: all 0.6s ease;
+  width: 100%;
+}
+.column img {
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  vertical-align: middle;
+  width: 100%;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.623);
+  display: flex;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.overlay .left {
+  display: flex;
+  flex: 2 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.overlay h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.overlay p {
+  color: #f5f1f1;
+  font-size: 0.7rem;
+}
+.overlay .right {
+  align-items: center;
+  display: flex;
+  flex: 1 1;
+  justify-content: flex-end;
+}
+.right .icon {
+  color: hsla(0, 0%, 100%, 0.89);
+  cursor: pointer;
+}
+.right .icon:hover {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+@media screen and (min-width: 500px) {
+  .overlay h3 {
+    font-size: 1.2rem;
+  }
+  .overlay p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100% 1;
+    margin: 1rem 0 0;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 701px) {
+  .column {
+    flex: 46% 1;
+    max-width: 46%;
+    overflow: hidden;
+    transition: all 2s ease;
+  }
+  .column img {
+    opacity: 1;
+    z-index: 0;
+  }
+  .column:hover img {
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .overlay {
+    bottom: -300px;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+  }
+  .column:hover .overlay {
+    bottom: 0;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

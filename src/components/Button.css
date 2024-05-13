@@ -1,0 +1,19 @@
+.button-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .rotate {
+    animation: rotate 1s linear;
+    transform-origin: center;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

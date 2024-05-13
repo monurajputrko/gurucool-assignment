@@ -260,7 +260,7 @@
   position: absolute;
   top: 200px;
   left: 500px;
-  width: 1045px;
+  width: 100%;
   height: 564px;
   font-size: var(--font-size-45xl);
 }
@@ -269,8 +269,8 @@
 .vectorIcon {
   position: absolute;
   top: -40px;
-  left: -180.8px;
-  width: 584.8px;
+  left: -550.8px;
+  width: 100%;
   height: 803.5px;
   object-fit: contain;
 }
@@ -304,4 +304,52 @@
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-segoe-ui);
+}
+
+
+@media (max-width: 1530px) {
+  .thisIsItParent {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 500px;
+    height: 564px;
+    font-size: var(--font-size-45xl);
+  }
+
+
+}
+
+
+@media (max-width: 1090px) {
+  .thisIsItParent {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 500px;
+    height: 564px;
+    font-size: var(--font-size-45xl);
+  }
+}
+
+@media (max-width: 920px) {
+  .thisIsItParent {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 350px;
+    height: 664px;
+    font-size: var(--font-size-45xl);
+  }
+}
+
+@media (max-width: 720px) {
+  .thisIsItParent {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 500px;
+    height: 64px;
+    font-size: 20px;
+  }
 }
